@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace QuickBuy.Dominio.Entidades
 {
-    public class Pedido
+    public class Pedido : Entidade
     {
 
         public int id { get; set; }
@@ -21,8 +21,7 @@ namespace QuickBuy.Dominio.Entidades
         public int NumeroEndereco { get; set; }
 
         public int FormaDePagamentoId { get; set; }
-
-        public FormaDePagamento FormaDePagamento { get; set; }
+        public FormaDePagamento FormaPagamento { get; set; }
 
         //pedido deve ter pelo menos um pedido
         //ou muitos pedidos
